@@ -1,46 +1,52 @@
 # Pokemon Full Stack
 
-### Important Note
+**Important Note**
 
-- Recommended v17.8.0 node version
+- Recommended Node.js version: v17.8.0
 
 ## Getting Started
 
-If you are starting the project on a new computer run you need to install the dependencies in both folders `server` and `frontend`. To do it run.
+If you are starting the project on a new computer, follow these steps to install the dependencies in both the `server` and `frontend` folders:
+
+1. Open your terminal and navigate to the project's root directory.
+2. Run the following command to install the dependencies:
 
 ```bash
 npm install
 ```
 
-Then, in both folders run:
+3. Once the dependencies are installed, run the following command in both the `server` and `frontend` folders:
 
 ```bash
 npm run dev
 ```
 
-Open [http://localhost:5173](http://localhost:5173) with your browser to see the result.
+4. Open your browser and visit [http://localhost:5173](http://localhost:5173) to see the result.
 
-## To run unit tests
+## Running Unit Tests
 
-Move to the `server` or `frontend` folders and run:
+To run unit tests, navigate to the `server` or `frontend` folders in your terminal and execute the following command:
 
 ```bash
 npm run test
 ```
 
-## To run Cypress tests
+## Running Cypress Tests
 
-You will need to have the app running(both `server` and `frontend`)
+Before running Cypress tests, ensure that both the `server` and `frontend` are up and running.
 
-When it's everything setup, move to the frontend folder and run to open the Cypress GUI:
+Once everything is set up, follow these steps:
+
+1. Move to the `frontend` folder in your terminal.
+2. Run the following command to open the Cypress GUI:
 
 ```bash
 npm run cypress
 ```
 
-Now inside Cypress GUI choose the "E2E Testing" option and then "google chrome". Here you will find a list of tests, click the one you would like to run.
+3. Inside the Cypress GUI, choose the "E2E Testing" option and select "Google Chrome". You will find a list of tests; click on the one you would like to run.
 
-If you prefer to only see the result in the terminal run:
+If you prefer to view the test results in the terminal instead, run the following command:
 
 ```bash
 npm run cypress-no-gui
