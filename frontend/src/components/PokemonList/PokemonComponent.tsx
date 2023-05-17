@@ -32,7 +32,7 @@ export default function PokemonComponent({ pokemon }: { pokemon: Pokemon }) {
 
   return (
     <LinkStyled key={id} to={`pokemon/${name}`}>
-      <PokemonHolder>
+      <PokemonHolder data-cy="pokemon">
         <Image src={imgSrc} alt={name} width={200} height={200} />
         <h4>{name}</h4>
       </PokemonHolder>
