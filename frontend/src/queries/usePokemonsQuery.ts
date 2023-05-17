@@ -1,3 +1,5 @@
+import { QUERIES, BACKEND_URL } from "./queriesReferences";
+
 import { useQuery } from "@tanstack/react-query";
 
 export const usePokemonsQuery = (
@@ -5,8 +7,8 @@ export const usePokemonsQuery = (
   page?: number,
   size?: number
 ) =>
-  useQuery(["POKEMONS_QUERY", queryValue, page, size], () => {
-    let url = "http://localhost:8080/pokemon";
+  useQuery([QUERIES.POKEMONS_QUERY, { queryValue, page, size }], () => {
+    let url = BACKEND_URL;
     let hasQuery = false;
     if (queryValue && queryValue.length > 0) {
       url = url.concat("?query=" + queryValue);
