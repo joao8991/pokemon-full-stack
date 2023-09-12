@@ -44,7 +44,6 @@ export default function PokemonsList() {
 
   return (
     <main>
-      <TopPanel handleSearchInputChange={handleSearchInputChange} />
       <PokemonsHolder>
         {isLoading ? (
           <PokemonsListContentLoader />
